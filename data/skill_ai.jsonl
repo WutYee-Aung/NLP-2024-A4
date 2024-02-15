@@ -1,22 +1,22 @@
-{"label":"SKILL|data-science", "pattern":"machine learning"}
-{"label":"SKILL|data-science", "pattern":"algorithms"}
-{"label":"SKILL|data-science", "pattern":"model"}
-{"label":"SKILL|data-science", "pattern":"python"}
-{"label":"SKILL|data-science", "pattern":"big data"}
-{"label":"SKILL|data-science", "pattern":"risk management"}
-{"label":"SKILL|data-science", "pattern":"mathematic"}
-{"label":"SKILL|bi", "pattern":"data visualization"}
-{"label":"SKILL|bi", "pattern":"database"}
-{"label":"SKILL|bi", "pattern":"oracle"}
-{"label":"SKILL|bi", "pattern":"dba"}
-{"label":"SKILL|bi", "pattern":"mysql"}
-{"label":"SKILL|bi", "pattern":"sqlserver"}
-{"label":"SKILL|bi", "pattern":"postgresql"}
-{"label":"SKILL|bi", "pattern":"data analysis"}
-{"label":"SKILL|bi", "pattern":"analytics"}
-{"label":"SKILL|bi", "pattern":"reporting"}
-{"label":"SKILL|bi", "pattern":"dashboard"}
-{"label":"SKILL|bi", "pattern":"performance dashboard"}
-{"label":"SKILL|bi", "pattern":"churn"}
-{"label":"SKILL|bi", "pattern":"customer segmentation"}
-{"label":"SKILL|bi", "pattern":"retention"}
+{"label":"SKILL|data-science", "pattern":[{"LOWER":"machine learning"}]}
+{"label":"SKILL|data-science", "pattern":[{"LOWER":"algorithms"}]}
+{"label":"SKILL|data-science", "pattern":[{"LOWER":"model"}]}
+{"label":"SKILL|data-science", "pattern":[{"LOWER":"python"}]}
+{"label":"SKILL|data-science", "pattern":[{"LOWER":"big data"}]}
+{"label":"SKILL|data-science", "pattern":[{"LOWER":"risk management"}]}
+{"label":"SKILL|data-science", "pattern":[{"LOWER":"mathematic"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"data visualization"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"database"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"oracle"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"dba"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"mysql"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"sqlserver"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"postgresql"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"data analysis"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"analytics"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"reporting"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"dashboard"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"performance dashboard"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"churn"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"customer segmentation"}]}
+{"label":"SKILL|bi", "pattern":[{"LOWER":"retention"}]}

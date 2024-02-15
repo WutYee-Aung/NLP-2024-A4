@@ -22,10 +22,12 @@
     <table border="1">
         <thead>
             <tr>
-                <th>Skills</th>
+                <th>Person Name</th>
+                <th>General Skills</th>
                 <th>Education</th>
                 <th>Skill DSAI</th>
                 <th>Skill BI</th>
+                <th>Organization</th>
                 <th>Email</th>
                 <th>Mobile no.</th>
             </tr>
@@ -33,38 +35,67 @@
         <tbody>
             <tr>
                 <td>
+                    <ul>
+                        {% for word in resume_result.person_name %}
+                            <li>{{ word }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul>
                         {% for word in resume_result.skills %}
-                            {{ word }}<br>
+                            <li>{{ word }}</li>
                         {% endfor %}
+                    </ul>
                 </td>
                 <td>
+                    <ul>
                         {% for word in resume_result.education %}
-                            {{ word }}<br>
+                            <li>{{ word }}</li>
                         {% endfor %}
+                    </ul>
                 </td>
                 <td>
+                    <ul>
                         {% for word in resume_result.skill_dsai %}
-                            {{ word }}<br>
+                            <li>{{ word }}</li>
                         {% endfor %}
+                    </ul>
                 </td>
                 <td>
+                    <ul>
                         {% for word in resume_result.skill_bi %}
-                            {{ word }}<br>
+                            <li>{{ word }}</li>
                         {% endfor %}
+                    </ul>
                 </td>
                 <td>
+                    <ul>
+                        {% for word in resume_result.org %}
+                            <li>{{ word }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul>
                         {% for word in resume_result.email %}
-                            {{ word }}<br>
+                            <li>{{ word }}</li>
                         {% endfor %}
+                    </ul>
                 </td>
                 <td>
+                    <ul>
                         {% for word in resume_result.mobile %}
-                            {{ word }}<br>
+                            <li>{{ word }}</li>
                         {% endfor %}
+                    </ul>
                 </td>
             </tr>
         </tbody>
     </table>
+    
+    <!-- download button -->
+    <a href="{{ url_for('download_cv_data') }}" class="btn">Download Extracted Data as CSV</a>
     {% endif %}
 </body>
 </html>
