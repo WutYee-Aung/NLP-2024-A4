@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Skill List</title>
+</head>
+<body>
+    <h1>Resume Skill List</h1>
+    
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf">
+        <button type="submit">Upload and Parse</button>
+    </form>
+    
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if resume_result %}
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Skills</th>
+                <th>Education</th>
+                <th>Skill DSAI</th>
+                <th>Skill BI</th>
+                <th>Email</th>
+                <th>Mobile no.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                        {% for word in resume_result.skills %}
+                            {{ word }}<br>
+                        {% endfor %}
+                </td>
+                <td>
+                        {% for word in resume_result.education %}
+                            {{ word }}<br>
+                        {% endfor %}
+                </td>
+                <td>
+                        {% for word in resume_result.skill_dsai %}
+                            {{ word }}<br>
+                        {% endfor %}
+                </td>
+                <td>
+                        {% for word in resume_result.skill_bi %}
+                            {{ word }}<br>
+                        {% endfor %}
+                </td>
+                <td>
+                        {% for word in resume_result.email %}
+                            {{ word }}<br>
+                        {% endfor %}
+                </td>
+                <td>
+                        {% for word in resume_result.mobile %}
+                            {{ word }}<br>
+                        {% endfor %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    {% endif %}
+</body>
+</html>
