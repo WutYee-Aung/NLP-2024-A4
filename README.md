@@ -5,7 +5,8 @@
 Name : Wut Yee Aung - st124377
 
 # Task1
-Extend the resume parsing by uploading skill patterns with skills.jsonl, skill_ai.jsonl and skills_education.jsonl. Added additional patterns for mobile no, email and education.
+- Extend the resume parsing by uploading skill patterns with "skills.jsonl", "skill_ai.jsonl" and "skills_profession.jsonl".
+- Added additional patterns for mobile no, email and education.
 
 # Task2
 
